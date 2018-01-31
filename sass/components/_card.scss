@@ -151,3 +151,204 @@
     }
 
 }
+
+.seo-card {
+// FUNCTIONALITY
+perspective: 150rem;
+-moz-perspective: 1500rem;
+position: relative;
+height: 52rem;
+opacity: .7;
+
+
+&__header {
+  position: absolute;
+  width: 20rem;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: $color-white;
+  // font-size: 3.5rem;
+}
+&__side {
+  height: 52rem;
+  transition: all .8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+  &--front {
+    background-color: $color-white;
+  }
+  &--back {
+
+    // transform: rotateY(180deg);
+
+    &-1 {
+      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+    }
+    &-2 {
+      background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+    }
+    &-3 {
+      background-image: linear-gradient(to right bottom, $color-teriary-light, $color-teriary-dark);
+    }
+    &-4 {
+      background-image: linear-gradient(to right bottom, $color-tertiary-light-2, $color-tertiary-dark-2);
+    }
+
+  }
+}
+
+
+.seo-card__icon {
+  position: absolute;
+  top: 70%;
+  display: inline-block;
+  background-image: linear-gradient(to right, $color-green-dark, $color-green-light);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+// FRONT SIDE STYLING
+&__picture {
+  position: relative;
+  background-size: cover;
+  height: 23rem;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  text-align: center;
+  background-blend-mode: screen;
+
+
+  
+  & .cog-1 {
+    position: absolute;
+    top: 13rem;
+    left: 8rem;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  & .cog-2 {
+
+    position: absolute;
+    top: 12.5rem;
+    left: 12.2rem;
+
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  & .cog-3 {
+    position: absolute;
+    top: 15.5rem;
+    left: 12.2rem;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  }
+
+&__heading {
+  font-size: 2.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+  color: $color-white;
+  position: absolute;
+  top: 12rem;
+  right: 2rem;
+  width: 73%;
+}
+
+
+
+&__details {
+  padding: 3rem;
+  ul {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+    li {
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 1rem;
+
+    }
+  }
+}
+
+&__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+
+&__price-box {
+  text-align: center;
+  color: $color-white;
+  margin-bottom: 8rem;
+}
+
+&__price-only {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+&__price-value {
+  font-size: 6rem;
+  font-weight: 100;
+}
+}

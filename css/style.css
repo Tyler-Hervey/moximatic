@@ -146,6 +146,24 @@
     -webkit-filter: blur(0);
     filter: blur(0); } }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
 *,
 *::after,
 *::before {
@@ -217,6 +235,18 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
+p {
+  font-size: 1.4rem; }
+
+h3 {
+  font-size: 3rem;
+  font-weight: 300; }
+
+h4 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 1rem 0; }
+
 .u-center-text {
   text-align: center; }
 
@@ -229,11 +259,20 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
+.u-margin-top-small {
+  margin-top: 4rem; }
+
+.u-margin-top-medium {
+  margin-top: 6rem; }
+
 .u-margin-top-big {
-  margin-bottom: 8rem; }
+  margin-top: 8rem; }
 
 .u-margin-top-huge {
-  margin-bottom: 10rem; }
+  margin-top: 10rem; }
+
+.u-max-height {
+  max-height: 10rem; }
 
 .bg-video {
   position: absolute;
@@ -407,6 +446,153 @@ body {
     font-size: 1.4rem;
     text-transform: uppercase; }
   .card__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
+
+.seo-card {
+  perspective: 150rem;
+  -moz-perspective: 1500rem;
+  position: relative;
+  height: 52rem;
+  opacity: .7; }
+  .seo-card__header {
+    position: absolute;
+    width: 20rem;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff; }
+  .seo-card__side {
+    height: 52rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .seo-card__side--front {
+      background-color: #fff; }
+    .seo-card__side--back-1 {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+    .seo-card__side--back-2 {
+      background-image: linear-gradient(to right bottom, #0a9dd9, #0078ae); }
+    .seo-card__side--back-3 {
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+    .seo-card__side--back-4 {
+      background-image: linear-gradient(to right bottom, #C62E99, #5C0095); }
+  .seo-card .seo-card__icon {
+    position: absolute;
+    top: 70%;
+    display: inline-block;
+    background-image: linear-gradient(to right, #a5d80e, #cdf457);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; }
+  .seo-card__picture {
+    position: relative;
+    background-size: cover;
+    height: 23rem;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    text-align: center;
+    background-blend-mode: screen; }
+    .seo-card__picture .cog-1 {
+      position: absolute;
+      top: 13rem;
+      left: 8rem;
+      -webkit-animation-name: spin;
+      -webkit-animation-duration: 4000ms;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+      -moz-animation-name: spin;
+      -moz-animation-duration: 4000ms;
+      -moz-animation-iteration-count: infinite;
+      -moz-animation-timing-function: linear;
+      -ms-animation-name: spin;
+      -ms-animation-duration: 4000ms;
+      -ms-animation-iteration-count: infinite;
+      -ms-animation-timing-function: linear;
+      animation-name: spin;
+      animation-duration: 4000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
+    .seo-card__picture .cog-2 {
+      position: absolute;
+      top: 12.5rem;
+      left: 12.2rem;
+      -webkit-animation-name: spin;
+      -webkit-animation-duration: 4000ms;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+      -moz-animation-name: spin;
+      -moz-animation-duration: 4000ms;
+      -moz-animation-iteration-count: infinite;
+      -moz-animation-timing-function: linear;
+      -ms-animation-name: spin;
+      -ms-animation-duration: 4000ms;
+      -ms-animation-iteration-count: infinite;
+      -ms-animation-timing-function: linear;
+      animation-name: spin;
+      animation-duration: 4000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
+    .seo-card__picture .cog-3 {
+      position: absolute;
+      top: 15.5rem;
+      left: 12.2rem;
+      -webkit-animation-name: spin;
+      -webkit-animation-duration: 4000ms;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+      -moz-animation-name: spin;
+      -moz-animation-duration: 4000ms;
+      -moz-animation-iteration-count: infinite;
+      -moz-animation-timing-function: linear;
+      -ms-animation-name: spin;
+      -ms-animation-duration: 4000ms;
+      -ms-animation-iteration-count: infinite;
+      -ms-animation-timing-function: linear;
+      animation-name: spin;
+      animation-duration: 4000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
+  .seo-card__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 73%; }
+  .seo-card__details {
+    padding: 3rem; }
+    .seo-card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .seo-card__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+  .seo-card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .seo-card__price-box {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 8rem; }
+  .seo-card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  .seo-card__price-value {
     font-size: 6rem;
     font-weight: 100; }
 
@@ -671,6 +857,29 @@ ul.tabs li.current {
     transform: translate(-50%, -50%);
     text-align: center; }
 
+#header-seo {
+  width: 100%;
+  margin-top: 10rem;
+  background: #323947;
+  padding: 5rem;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center; }
+  #header-seo a {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 2rem;
+    font-size: 2.5rem;
+    border-radius: 3px;
+    color: #cdf457;
+    text-transform: uppercase;
+    border-bottom: solid #cdf457 1px;
+    line-height: 1rem; }
+  #header-seo a:link {
+    text-decoration: none; }
+  #header-seo a:hover {
+    color: #fff; }
+
 .navbar.navbar-expand-md.fixed-top {
   background-color: #fff;
   padding-top: 1.5rem;
@@ -733,3 +942,39 @@ ul.tabs li.current {
     font-weight: 100;
     color: #fff;
     letter-spacing: .5px; }
+
+.seo-card__section {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)), url(../img/mauro-mora-85112.jpg);
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: 50rem; }
+  .seo-card__section > * {
+    transform: skewY(7deg); }
+
+.fa-cogs {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%); }
+
+.slider-section {
+  padding: 20rem 0; }
+
+.slider-circle {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  background: #2998ff;
+  margin: 2rem; }
+  .slider-circle:hover {
+    transform: scale(1.2);
+    transition: transform .5s ease; }
+
+.slick-prev:before,
+.slick-next:before {
+  color: #323947;
+  font-size: 8rem; }
+
+.slick-prev, .slick-next {
+  z-index: 1; }
