@@ -167,7 +167,7 @@ opacity: .7;
   top: 2rem;
   left: 50%;
   transform: translateX(-50%);
-  color: $color-white;
+  color: $color-gray-dark-2;
   // font-size: 3.5rem;
 }
 &__side {
@@ -184,26 +184,8 @@ opacity: .7;
   &--front {
     background-color: $color-white;
   }
-  &--back {
 
-    // transform: rotateY(180deg);
-
-    &-1 {
-      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
-    }
-    &-2 {
-      background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
-    }
-    &-3 {
-      background-image: linear-gradient(to right bottom, $color-teriary-light, $color-teriary-dark);
-    }
-    &-4 {
-      background-image: linear-gradient(to right bottom, $color-tertiary-light-2, $color-tertiary-dark-2);
-    }
-
-  }
 }
-
 
 .seo-card__icon {
   position: absolute;
@@ -213,6 +195,8 @@ opacity: .7;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  margin-bottom:2rem;
+  transform: translateX(-50%);
 }
 
 
@@ -230,7 +214,7 @@ opacity: .7;
   
   & .cog-1 {
     position: absolute;
-    top: 13rem;
+    top: 16rem;
     left: 8rem;
     -webkit-animation-name: spin;
     -webkit-animation-duration: 4000ms;
@@ -253,7 +237,7 @@ opacity: .7;
   & .cog-2 {
 
     position: absolute;
-    top: 12.5rem;
+    top: 15.5rem;
     left: 12.2rem;
 
     -webkit-animation-name: spin;
@@ -276,7 +260,7 @@ opacity: .7;
 
   & .cog-3 {
     position: absolute;
-    top: 15.5rem;
+    top: 18.5rem;
     left: 12.2rem;
     -webkit-animation-name: spin;
     -webkit-animation-duration: 4000ms;
