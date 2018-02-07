@@ -16,13 +16,18 @@
 @import "components/composition";
 @import "components/feature-box";
 @import "components/form";
+@import "components/info-card";
+@import "components/layer-img";
 @import "components/story";
 @import "components/tabs";
 
 @import "layout/grid";
 @import "layout/header";
+
+
 @import "layout/header-seo";    
 @import "layout/navigation";
-
 @import "pages/home";
 @import "pages/seo";
+@import "pages/web-design";
+

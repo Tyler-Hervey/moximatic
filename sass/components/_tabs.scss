@@ -7,26 +7,30 @@
 		ul.tabs li{
 			background: none;
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      color: rgba(255, 255, 255, 0.5);
+      // color: rgba(255, 255, 255, 0.5);
 			padding: 10px 15px;
 			cursor: pointer;
+			&:hover {
+
+	    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 10px -4px inset;
+			}
 		}
 
 		ul.tabs li.current{
-      color: #FFF;
+      // color: #FFF;
 			border-color: $color-white;
 
 		}
 
 		.tab-content{
 			display: none;
-			background: #ededed;
-			padding: 15px;
-      border-radius: 10px;
-          box-shadow:
-          0 20px 60px rgba(0, 0, 0, 0.07),
-          0 2px 8px rgba(0, 0, 0, 0.05),
-          0 0 0 1px rgba(0, 0, 0, 0.05);
+			background:$color-white;
+
+      border-radius: 15px;
+      //     box-shadow:
+      //     0 20px 60px rgba(0, 0, 0, 0.07),
+      //     0 2px 8px rgba(0, 0, 0, 0.05),
+      //     0 0 0 1px rgba(0, 0, 0, 0.05);
 		}
 
 		.tab-content.current{

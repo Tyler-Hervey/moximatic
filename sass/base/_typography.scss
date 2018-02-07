@@ -22,11 +22,7 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
-    animation: glitch 3s steps(100) infinite;
-  }
 
-  .head-m{
-    animation: glitch-2 3s steps(100) infinite;
   }
 
     &--sub{
@@ -41,7 +37,7 @@ body {
 .heading-secondary{
   font-weight: 400;
   display: inline-block;
-  background-image: linear-gradient(to right,$color-primary-light, $color-primary-dark);
+  background-image: linear-gradient(to right,$color-primary-dark, $color-primary-dark);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;

@@ -1,13 +1,11 @@
 
   .navbar.navbar-expand-md.fixed-top {
-    background-color: $color-white;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    color: $color-black;
-    border-top: 5px solid #0078ae;
+
 
     .nav-link {
-      color: #000;
+      color: $color-gray-light-1;
       font-size: 1.5rem;
       margin-top: 1rem;
       padding-right: 1.3rem;

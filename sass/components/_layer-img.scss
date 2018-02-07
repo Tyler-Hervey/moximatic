@@ -1,0 +1,27 @@
+.layer__anima{
+  position: relative;
+
+  &--img{
+    position: absolute;
+    &-1{
+
+    }
+    &-2{
+      left: 400px;
+      top: 95px;
+    }
+    &-3{
+      left: 84px;
+          top: 246px;
+    }
+    &-4{
+      left: 111px;
+      top: 27px;
+    }
+    &-5{
+    left: 16px;
+    top: 57px;
+    }
+  }
+
+}

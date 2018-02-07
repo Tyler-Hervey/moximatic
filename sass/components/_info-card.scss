@@ -1,0 +1,57 @@
+.info__card {
+
+    &-1{
+      box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+      border-radius: 0 0 15px 15px;
+    }
+    &-3 {
+      ul{
+        list-style-type: none;
+        padding: 2.5rem;
+
+      }
+
+      .fa{
+        font-size: 5rem;
+      }
+      p {
+        display: inline;
+        margin-left: 30px;
+      }
+      .fa-lightbulb-o{
+        color: #C62E99;
+      }
+      .fa-money{
+        color: #A8DB0E;
+      }
+      .fa-briefcase{
+        color: #5C0095;
+      }
+      .fa-eye{
+        color: #F92C8B;
+      }
+      .fa-line-chart{
+        color: #F15555;
+      }
+    }
+  &--heading{
+    padding:3rem;
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 200;
+    // background-image: linear-gradient(to right , #F92C8B, #C62E99);
+    // background: linear-gradient(168deg, #C62EDD 0%, #F92C78 100%);
+    background: linear-gradient(168deg, #C62E99 0%, #F92C8B 100%);
+    border-radius: 15px 15px 0 0;
+    color: $color-white;
+  }
+  &--text{
+    font-size: $default-font-size;
+    // background: $color-white;
+    font-weight: 100;
+    padding: 40px 30px;
+    line-height: 30px;
+  }
+
+
+}

@@ -45,6 +45,15 @@
     }
   }
 
+  &--dark {
+    background-color: #5C0095;
+    color: $color-white;
+
+    &::after {
+      background-color: #5C0095;
+    }
+  }
+
   &::after {
     content: '';
     display: inline-block;
