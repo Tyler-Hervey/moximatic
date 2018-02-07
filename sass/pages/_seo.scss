@@ -24,16 +24,69 @@
 
 .seo-card__section {
 
-    padding: 10rem 0;
+    padding: 12rem 0;
     background-image: linear-gradient( to right bottom, rgba($color-teriary-light, 0.8),
                         rgba($color-teriary-dark, 0.8)), url(../img/mauro-mora-85112.jpg);
     background-size: cover;
     transform: skewY(-5deg);
     margin-top: -7rem;
+    color: $color-gray-dark;
 
     &>* {
         transform: skewY(5deg);
     }
+    .grey-background {
+        padding: 2rem;
+        background-color: $color-off-white;
+        border-radius: 3px;
+        box-shadow: 0 1rem 4rem rgba($color-gray-dark-2, .5);
+    }
+
+    .seo-cta-1 {
+        font-size: 2.5rem;
+    }
+    a {
+        display: inline-block;
+        margin-top: 2rem;
+        padding: 2rem;
+        font-size: 2.5rem;
+        border-radius: 3px;
+        color: $color-gray-dark;
+        text-transform: uppercase;
+        border-bottom: solid $color-teriary-dark 1px;
+        line-height: 1rem;
+        line-break: loose;
+    }
+
+    a:link {
+        text-decoration: none;
+
+    }
+
+    a:visited {
+
+    }
+
+    a:hover {
+        color: $color-off-white;
+        box-shadow: 1rem 1rem 1rem rgba($color-gray-dark-2, .3);
+    }
+
+    a:active {
+    }
+    
+    a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $color-green-dark;
+    }
+
+
 }
 
 .fa-cogs {
@@ -50,28 +103,17 @@
 }
 .slider-section {
     padding: 10rem 0;
-    margin-top: -17rem;
         & .col {
             flex-grow: 0;
         }
 }
-.slider-circle {
-    height: 10rem;
-    width: 10rem;
-    border-radius: 50%;
-    background: $color-gray-dark-2;
-    margin: 2rem;
-    &:hover {
-        transform: scale(1.2);
-        transition: transform .5s ease;
-    }
-}
-.slider {
-    display: block;
-    position: relative;
-    width: 90vw;
 
-}
+// .slider {
+//     display: block;
+//     position: relative;
+//     width: 90vw;
+
+// }
 .slider-content {
     display: block;
     margin: 3rem;
@@ -102,26 +144,18 @@
 }
 
 .seo-img-1 {
-    position: relative;
-    float: right;
-    right: 20rem;
+
 }
 .seo-img-1b {
-    position: relative;
-    left: 75rem;
-    top: 32rem;
+
 }
 
 .seo-img-2 {
-    position: relative;
-    float: right;
-    right: 20rem;
+
 
 }
 .seo-img-3 {
-    position: relative;
-    float: right;
-    right: 20rem;
+
 }
 
 
@@ -159,7 +193,73 @@
     z-index: 1;
 }
 
-.seo-img-1b {
-    // display: relative;
-    // top: 20rem;
+.slick-dots {
+    top: -5rem;
+}
+
+.slick-dots li {
+    width: 8rem;
+}
+
+.slick-dots li button:before {
+
+}
+.slider-dot-icon {
+    max-height: 8rem;
+    width: auto;
+}
+
+
+@media (max-width: 760px) {
+    // @include clearfix;
+    .slick-slide {
+        height: 82vh;
+    }
+
+    .content-left {
+        position: relative;
+        max-width: 100%;
+        float: none;
+        left: -10rem;
+        // height: 50rem;
+        & .slider-h3 {
+            position: absolute;
+            // display: block;
+            min-width: 40rem;
+            max-width: 100%;
+            top: 5rem;
+        }
+        & .slider-paragraph {
+            position: absolute;
+            display: block;
+            min-width: 40rem;
+            max-width: 100%;
+            top: 10rem;
+        }
+    }
+    
+    .content-right {
+        position: relative;
+        float: none;
+        .seo-img-1, .seo-img-2, .seo-img-3 {
+            position: absolute;
+            top: 20rem;
+            left: -12rem;
+        }
+        .seo-img-1b {
+            position: absolute;
+            top: 31rem;
+            right: 10rem;
+            width: 7rem;
+        }
+    } 
+
+    .slick-next, .slick-prev {
+        position: absolute;
+        top: 60%;
+        background: transparent;
+        height: 80px;
+        color: transparent;
+}
+
 }

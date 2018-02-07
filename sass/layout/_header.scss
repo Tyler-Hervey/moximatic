@@ -1,10 +1,9 @@
 .header {
-    height: 95vh;
+    height: 55vh;
     background-image: linear-gradient(
         to right bottom,
-    rgba($color-black, 0.7) ,
-    rgba($color-black, 0.7)),
-    url(../img/computer-coffee.jpg);
+    rgba(50, 57, 71, 0.7) ,
+    rgba(50, 57, 71, 0.7)),;
     background-size: cover;
     background-position: top;
     position: relative;
